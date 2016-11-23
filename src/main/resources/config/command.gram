@@ -1,0 +1,9 @@
+#JSGF V1.0;
+
+grammar command;
+
+<menu_command> = play | pause | stop;
+
+<command_word> = (cynthia)*;
+
+public <command> = <command_word> | <command_word> <menu_command>;
